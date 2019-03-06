@@ -1,0 +1,9 @@
+pre:
+  window: 1
+filt:
+  threshold: 3.5
+roll_window: 30
+output:
+  window: 1.5
+thresh_right:
+  stoptime: 3000

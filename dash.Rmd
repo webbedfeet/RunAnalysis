@@ -1,0 +1,29 @@
+---
+title: "Tests"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    social: ["twitter", "linkedin"]
+    source_code: embed
+    theme: paper
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(DT)
+```
+
+
+### Cars
+
+```{r}
+knitr::kable(mtcars)
+```
+
+
+### DT
+
+```{r}
+datatable(mtcars, options = list(bPaginate = FALSE))
+```
+
